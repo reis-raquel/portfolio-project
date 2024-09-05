@@ -66,24 +66,39 @@ p {
 
 @media (max-width: 900px) {
   h1 {
-    font-size: 40px
+    font-size: 40px;
   }
 
-.hero{padding: 80px 10px}
+  .hero {
+    padding: 80px 10px;
+  }
 }
 
+.about-section h1 {
+  font-size: 40px;
+}
+h2 {
+  font-weight: bold;
+}
 
-.about-section 
-h1{ font-size: 40px;}
-h2{ font-weight:bold;}
+.about-section img {
+  max-height: 400px;
+  border-radius: 4px;
+}
 
-.about-section
-img{ max-height: 400px;border-radius: 4px;} 
+.about-section {
+  padding: 10px;
+  text-align: center;
+}
+.row {
+  margin-left: 40px;
+}
 
-  
-.about-section{padding: 10px; text-align: center; }
-.row {margin-left:40px ; }
+.about-content {
+  margin-right: 10px;
+  text-align: left;
+}
 
-.about-content{margin-right: 10px;text-align: left;}
-
-.about-photo{margin: 10px;}
+.about-photo {
+  margin: 10px;
+}
