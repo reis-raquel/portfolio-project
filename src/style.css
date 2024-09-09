@@ -5,40 +5,37 @@
   --default-font-family: "Quicksand", sans-serif;
 }
 
+body{ font-family: var(--default-font-family);}
+
 h1 {
   font-family: var(--heading-font-family);
   color: black;
-  font-size: 60px;
+  font-size: 50px;
   font-weight:bolder;
   text-align: center;
 }
 
-h2,
-h3,
-p {
-  font-family: var(--default-font-family);
-  font-size: 18px;
-}
 
-p {
+p {font-size: 19px;
   font-weight: normal;
   line-height: 1.5;
 }
+
+
 
 .title-project {
   font-size: 30px;
   font-weight: 400;
 }
 
-.container-fluid {
-  font-family: var(--default-font-family);
-}
+
 
 .hero {
   background: var(--primary-color);
   text-align: center;
-  padding: 160px 20px;
+  padding: 120px;
 }
+.slogan{ font-style: italic;font-size:30px ;}
 
 .btn {
   font-family: var(--default-font-family);
@@ -52,62 +49,51 @@ p {
 }
 
 .h3-project {
-  font-size: 38px;
-}
-
-.btn-branding-outline {
-  font-family: var(--default-font-family);
-  border-color: black;
-  color: black;
-}
-
-.col {
-  padding: 30px;
+  font-size: 35px;
 }
 
 
-
-  .hero {
-    padding: 80px 10px;
-  }
+.col {padding: 30px;}
+  
 
 
-.content-container h1 {
-  font-size: 40px;
-}
-h2 {
+ .title-my-projects{ font-size:30px ;font-weight: 600;}
+
+
+.content-container{margin-top: 90px;justify-content: space-evenly;}
+
+.content-container h2 {
   font-weight: bold;
 }
 
-.content-container img {
-  max-height: 400px;
-  border-radius: 4px;
-}
-
-.content-container {
-  padding: 10px;
-  text-align: center;
-}
 .row {
   margin-left: 40px;
 }
 
 .content {
+
   margin-right: 10px;
   text-align: left;
 }
 
-.about-photo {
-  margin: 10px;
-}
+.about-photo {border-radius: 4px; width: 400px; justify-content:evenly;
+border-style: solid; border-color:var(--primary-color);border-width: 10px;
+margin-top: 90px;}
+
+
+
+
 .weather-photo{
-height: 399px;
+height: 370px;
 
 }
+
+.sauna-photo{ height: ;}
 
 
 @media (max-width: 800px) {
-  h1 {font-size: 40px;}}
+  h1 {font-size: 30px;}}
 
 
- 
+@media (max-width: 800px) {
+  .about-photo{display:block;margin: 0 auto;}}
