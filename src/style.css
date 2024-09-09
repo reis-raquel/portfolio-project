@@ -1,5 +1,5 @@
 :root {
-  --primary-color: rgb(53, 31, 46);
+  --primary-color: hsl(143, 18%, 25%);
   --secondary-color: #969ba7;
   --heading-font-family: "Padyakke Expanded One", serif;
   --default-font-family: "Quicksand", sans-serif;
@@ -52,7 +52,7 @@ img{ border-style: solid; border-color:var(--primary-color); border-width: 3px;b
 
 .btn:hover {
   background-color: var(--primary-color);
-  border: black;font-weight: bold;
+  border: white;font-weight: bold; color: white;
 }
 
 .h3-project {
@@ -92,6 +92,7 @@ margin-top: 90px;}
 .contacts{ padding-bottom:200px;}
 
 .contact-list{ list-style: none;padding: 50px;}
+.contact-list a { color:hsl(143, 18%, 25%);}
 
 .final-paragraph{ padding: 10px;}
 
@@ -100,7 +101,6 @@ margin-top: 90px;}
       
   h2 {font-size: 30px; text-align: center;}
 }
-
 
 @media (max-width: 800px) {
   .container-fluid{ height:20px;font-size: 10px; ; max-width: 370px;}
