@@ -1,5 +1,5 @@
 :root {
-  --primary-color: rgb(209, 221, 230);
+  --primary-color: rgb(53, 31, 46);
   --secondary-color: #969ba7;
   --heading-font-family: "Padyakke Expanded One", serif;
   --default-font-family: "Quicksand", sans-serif;
@@ -7,9 +7,8 @@
 
 body{ font-family: var(--default-font-family);}
 
-h1 {
+h1 {padding-top: 55px;
   font-family: var(--heading-font-family);
-  color: black;
   font-size: 40px;
   font-weight:bolder;
   text-align: center;
@@ -21,11 +20,15 @@ p {font-size: 19px;
   line-height: 1.5;
 }
 
+ 
+img{ border-style: solid; border-color:var(--primary-color); border-width: 3px;border-radius: 3px;}
+
+
 .navbar{ height: 70px; font-size: 24px;}
 
-.nav-link a {font-size: 24px; }
+.navbar a{font-size: 24px;}
 
-.navbar-brand {background-color: var(--primary-color);padding: 10px;}
+.navbar-brand {color: white;background-color: var(--primary-color);padding: 10px;}
 
 .title-project {
   font-size: 45px;
@@ -33,11 +36,13 @@ p {font-size: 19px;
 }
 
 .hero {
+  color: white;
   background: var(--primary-color);
   text-align: center;
-  padding: 120px;
+  
+  padding-top:80px
 }
-.slogan{ font-style: italic;font-size:30px ;}
+.slogan{ font-style: italic;font-size:30px ;padding-top: 30px;}
 
 .btn {
   font-family: var(--default-font-family);
@@ -58,7 +63,6 @@ p {font-size: 19px;
 .col {padding: 30px;}
   
 
-
  .title-my-projects{ font-size:30px ;font-weight: 600;}
 
 
@@ -68,44 +72,37 @@ p {font-size: 19px;
   font-weight:200; text-align: center;
 }
 
-.row {
-  margin-left: 40px;
-}
-
 .content {
-
   margin-right: 10px;
   text-align: left;
 }
 
 .about-photo {border-radius: 4px; width: 400px; justify-content:evenly;
-border-style: solid; border-color:var(--primary-color);border-width: 10px;
+border-style: solid; border-color:var(--primary-color);border-width: 1px;
 margin-top: 90px;}
 
 
+.footer { height: 100px; margin-bottom: 10px; } 
 
-
-.weather-photo{
-height: 370px;
-
-}
-
-.sauna-photo{ height: ;}
-
-
-.footer { height: 100px; margin-bottom: 30px; } 
-
-.footer a  {color:var(--secondary-color); background-color:var(--primary-color) ;font-size: 18px;
-padding: 20px;border-radius: 40px;transition:all 100ms ease-in-out;} 
+.footer a  {color:white; background-color:var(--primary-color) ;font-size: 18px;
+  padding: 18px;border-radius: 50px;transition:all 100ms ease-in-out;} 
 
 .footer a :hover{ color: white;background-color: var--(--secondary-color);}
 
+.contacts{ padding-bottom:200px;}
+
+.contact-list{ list-style: none;padding: 50px;}
+
+.final-paragraph{ padding: 10px;}
 
 @media (max-width: 800px) {
   h1 {font-size: 30px; text-align: center;}
       
   h2 {font-size: 30px; text-align: center;}
+}
 
-  
+
+@media (max-width: 800px) {
+  .container-fluid{ height:20px;font-size: 10px; ; max-width: 370px;}
 
 }
