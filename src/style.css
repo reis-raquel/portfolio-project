@@ -1,5 +1,5 @@
 :root {
-  --primary-color: hsl(206, 30%, 86%);
+  --primary-color: rgb(209, 221, 230);
   --secondary-color: #969ba7;
   --heading-font-family: "Padyakke Expanded One", serif;
   --default-font-family: "Quicksand", sans-serif;
@@ -10,7 +10,7 @@ body{ font-family: var(--default-font-family);}
 h1 {
   font-family: var(--heading-font-family);
   color: black;
-  font-size: 50px;
+  font-size: 40px;
   font-weight:bolder;
   text-align: center;
 }
@@ -21,14 +21,16 @@ p {font-size: 19px;
   line-height: 1.5;
 }
 
+.navbar{ height: 70px; font-size: 24px;}
 
+.nav-link a {font-size: 24px; }
+
+.navbar-brand {background-color: var(--primary-color);padding: 10px;}
 
 .title-project {
-  font-size: 30px;
+  font-size: 45px;
   font-weight: 400;
 }
-
-
 
 .hero {
   background: var(--primary-color);
@@ -44,8 +46,8 @@ p {font-size: 19px;
 }
 
 .btn:hover {
-  background-color: var(--secondary-color);
-  border: black;
+  background-color: var(--primary-color);
+  border: black;font-weight: bold;
 }
 
 .h3-project {
@@ -63,7 +65,7 @@ p {font-size: 19px;
 .content-container{margin-top: 90px;justify-content: space-evenly;}
 
 .content-container h2 {
-  font-weight: bold;
+  font-weight:200; text-align: center;
 }
 
 .row {
@@ -91,9 +93,19 @@ height: 370px;
 .sauna-photo{ height: ;}
 
 
-@media (max-width: 800px) {
-  h1 {font-size: 30px;}}
+.footer { height: 100px; margin-bottom: 30px; } 
+
+.footer a  {color:var(--secondary-color); background-color:var(--primary-color) ;font-size: 18px;
+padding: 20px;border-radius: 40px;transition:all 100ms ease-in-out;} 
+
+.footer a :hover{ color: white;background-color: var--(--secondary-color);}
 
 
 @media (max-width: 800px) {
-  .about-photo{display:block;margin: 0 auto;}}
+  h1 {font-size: 30px; text-align: center;}
+      
+  h2 {font-size: 30px; text-align: center;}
+
+  
+
+}
