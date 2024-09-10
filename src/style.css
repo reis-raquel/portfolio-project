@@ -1,6 +1,6 @@
 :root {
-  --primary-color: hsl(143, 18%, 25%);
-  --secondary-color: #969ba7;
+  --linear-gradient:linear-gradient(109.6deg, rgb(17, 151, 147) 11.2%, rgb(154, 214, 212) 55.4%, rgb(255, 233, 171) 100.2%);
+  --primary-color: rgb(91, 185, 171);
   --heading-font-family: "Padyakke Expanded One", serif;
   --default-font-family: "Quicksand", sans-serif;
 }
@@ -14,8 +14,12 @@ h1 {padding-top: 55px;
   text-align: center;
 }
 
+h2{font-size: 25px;
+  text-align: center;
+  font-family: var(--default-font-family);} 
 
-p {font-size: 19px;
+
+p {font-size: 16px;
   font-weight: normal;
   line-height: 1.5;
 }
@@ -28,19 +32,17 @@ img{ border-style: solid; border-color:var(--primary-color); border-width: 3px;b
 
 .navbar a{font-size: 24px;}
 
-.navbar-brand {color: white;background-color: var(--primary-color);padding: 10px;}
+.navbar-nav a:hover{ text-decoration: underline;} 
 
-.title-project {
-  font-size: 45px;
-  font-weight: 400;
-}
+.navbar-brand {color: white;background-color: var(--primary-color);padding: 10px;border-radius: 2px;border-style: solid;border-color: #969ba7;}
+
 
 .hero {
   color: white;
-  background: var(--primary-color);
+  background: var(--linear-gradient);
   text-align: center;
-  
-  padding-top:80px
+  padding-top:80px;
+
 }
 .slogan{ font-style: italic;font-size:30px ;padding-top: 30px;}
 
@@ -52,19 +54,11 @@ img{ border-style: solid; border-color:var(--primary-color); border-width: 3px;b
 
 .btn:hover {
   background-color: var(--primary-color);
-  border: white;font-weight: bold; color: white;
+  border: white;font-weight: bold; color: black;
 }
-
-.h3-project {
-  font-size: 35px;
-}
-
 
 .col {padding: 30px;}
   
-
- .title-my-projects{ font-size:30px ;font-weight: 600;}
-
 
 .content-container{margin-top: 90px;justify-content: space-evenly;}
 
@@ -78,16 +72,16 @@ img{ border-style: solid; border-color:var(--primary-color); border-width: 3px;b
 }
 
 .about-photo {border-radius: 4px; width: 400px; justify-content:evenly;
-border-style: solid; border-color:var(--primary-color);border-width: 1px;
+border-style: solid; border-color:hsl(184, 19%, 51%);border-width: 1px;
 margin-top: 90px;}
 
 
 .footer { height: 100px; margin-bottom: 10px; } 
 
-.footer a  {color:white; background-color:var(--primary-color) ;font-size: 18px;
-  padding: 18px;border-radius: 50px;transition:all 100ms ease-in-out;} 
+.footer a  {color:black;font-size: 18px;
+  } 
 
-.footer a :hover{ color: white;background-color: var--(--secondary-color);}
+.footer a :hover{ color: black;}
 
 .contacts{ padding-bottom:200px;}
 
@@ -96,13 +90,3 @@ margin-top: 90px;}
 
 .final-paragraph{ padding: 10px;}
 
-@media (max-width: 800px) {
-  h1 {font-size: 30px; text-align: center;}
-      
-  h2 {font-size: 30px; text-align: center;}
-}
-
-@media (max-width: 800px) {
-  .container-fluid{ height:20px;font-size: 10px; ; max-width: 370px;}
-
-}
